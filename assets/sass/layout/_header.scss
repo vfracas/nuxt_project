@@ -1,0 +1,30 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+@import '../base/typography';
+
+header{
+  width: 100%;
+  padding-top: 20px;
+  @include flex_row;
+  justify-content: space-around;
+}
+
+.logo_title{
+  width: 330px;
+  @include flex_row;
+}
+
+.title{
+  font-size: 2rem;
+}
+
+nav>a{
+  font-size: 1.7rem;
+}
+
+nav{
+  width: 400px;
+  @include flex_row;
+  justify-content: space-around;
+  align-items: center;
+}

@@ -1,0 +1,29 @@
+@import '../utils/variables';
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 1.8rem;
+  color: $white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: all 0.2s;
+  &:visited{
+    color: $white;
+  }
+  &.--main{
+    background-color: $main_color;
+    &:hover {
+      background:darken($main_color,8%);
+      transition: all 0.3s ease;
+    }
+  }
+
+  &.--grey{
+    background-color: $grey;
+    &:hover {
+      background:darken($grey,8%);
+      transition: all 0.3s ease;
+    }
+  }
+}

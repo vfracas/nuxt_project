@@ -1,0 +1,12 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+footer{
+  height: 50px;
+  width: 100%;
+  color: $white;
+  background-color: $main_color;
+  @include flex_row;
+  justify-content: space-around;
+  align-items: center;
+}

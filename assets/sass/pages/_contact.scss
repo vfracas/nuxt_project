@@ -1,0 +1,41 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+form{
+  height: 500px;
+  width: 800px;
+  padding: 20px;
+  background-color: $main_color;
+  @include flex_col;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px $grey;
+}
+
+input, textarea, select{
+  border: none;
+  font-size: 1rem;
+  color: $grey;
+  padding-left: 10px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px $grey;
+}
+
+input{
+  height: 40px;
+  width: 500px;
+}
+
+textarea{
+  height: 90px;
+  width: 500px;
+  padding-top: 10px;
+}
+
+input.button{
+  font-size: 1.4rem;
+  color: $main_color;
+  padding: 0;
+  width: 100px;
+}

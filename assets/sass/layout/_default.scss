@@ -1,0 +1,19 @@
+@import '../utils/mixins';
+@import '../base/typography';
+
+
+body{
+  width: auto;
+  overflow-y: scroll;
+}
+
+#__nuxt, #__layout, main{
+  height: 100%;
+}
+
+main{
+  min-height: 100vh;
+  @include flex_col;
+  justify-content: space-between;
+  align-items: center;
+}
